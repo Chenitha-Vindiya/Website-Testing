@@ -1,0 +1,156 @@
+/* Hide scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container .form-box input:-webkit-autofill {
+    background-color: transparent !important;
+    /* Keeps background unchanged */
+    -webkit-box-shadow: 0 0 0px 1000px #444 inset !important;
+    /* Set to desired color */
+    color: #fff !important;
+    /* Adjust text color if needed */
+    border-radius: 5px !important;
+    -webkit-text-fill-color: white !important;
+    caret-color: white;
+    border: none !important;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-box h2 {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none !important;
+    border-radius: 5px;
+    background: #444;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    /* Prevents input fields from exceeding the container */
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.hero-overlay .container {
+    /* position: absolute; */
+    width: 100%;
+    max-width: 500px;
+    background: radial-gradient(circle at center, #0A2A6F33, #0A2A6F99);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 25x #000, -5px -5x 25px #fff;
+    border: 2px solid #0e64c7;
+    backdrop-filter: blur(10px);
+    vertical-align: middle;
+
+    opacity: 1;
+    transform: translate(125%, 0%);
+    transition: transform 1s ease, opacity 2.5s ease;
+    /* prevent clicks while hidden  */
+    pointer-events: none;
+}
+
+.hero-overlay .form-active {
+    opacity: 1;
+    transform: translate(170%, 0%);
+    /* allow clicks once visible */
+    pointer-events: auto;
+}
+
+.container,
+.register-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s ease-in-out;
+}
+
+.hero-overlay .register-container {
+    /* position: absolute; */
+    width: 100%;
+    max-width: 500px;
+    background: radial-gradient(circle at center, #0A2A6F33, #0A2A6F99);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 25x #000, -5px -5x 25px #fff;
+    border: 2px solid #0e64c7;
+    backdrop-filter: blur(10px);
+    vertical-align: middle;
+}
+
+.hero-overlay .hidden {
+    opacity: 0;
+    transform: translate(130%, 0%);
+    transition: transform 1s ease, opacity 2.5s ease;
+    /* prevent clicks while hidden  */
+    pointer-events: none;
+}
+
+.hero-overlay .show {
+    opacity: 1;
+    transform: translate(0%, 0%);
+    /* allow clicks once visible */
+    pointer-events: auto;
+}
+
+select {
+    width: 100px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+option {
+    background-color: #ffffff;
+    /* Option background */
+    color: #000000;
+    /* Option text color */
+}
+
+.register-btn {
+    background-color: #001f3f;
+    /* Navy blue */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #003366;
+    /* Slightly lighter navy on hover */
+}
+
+.name {
+    display: flex;
+    gap: 10px;
+    margin: 0px 22.5px 0px 22.5px;
+}
