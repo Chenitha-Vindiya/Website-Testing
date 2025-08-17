@@ -1,0 +1,25 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Apply to the body or any container */
+body {
+    overflow: auto;
+    /* Allows scrolling */
+    -ms-overflow-style: none;
+    /* Hides scrollbar in IE & Edge */
+    scrollbar-width: none;
+    /* Hides scrollbar in Firefox */
+    /* background-color: #0A2A6F; */
+    background: url('/My/IMAGE/jpeg.jpg') no-repeat center/cover fixed;
+    /*padding-top: 80px;*/
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    color: white;
+}
