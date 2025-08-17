@@ -8,7 +8,6 @@
     <title>Dulara Hettiarachchi</title>
 
     <link rel="stylesheet" type="text/css" href="/My/CSS/styles_V2.css">
-    <link rel="stylesheet" type="text/css" href="/My/CSS/dropdown.css">
     <link rel="stylesheet" type="text/css" href="/My/CSS/main.css">
     <link rel="stylesheet" type="text/css" href="/My/CSS/signin_V2.css">
 
